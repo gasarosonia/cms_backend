@@ -12,11 +12,11 @@ async function bootstrap() {
     forbidNonWhitelisted: true,
   }));
   const config = new DocumentBuilder()
-  .setTitle('CMS API')
-  .setDescription('CMS API description')
-  .setVersion('1.0')
-  .addTag('cms')
-  .build();
+    .setTitle('CMS API')
+    .setDescription('CMS API description')
+    .setVersion('1.0')
+    .addTag('cms')
+    .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
   app.enableCors();
