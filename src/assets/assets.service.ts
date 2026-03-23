@@ -65,7 +65,7 @@ private applyDepreciation(asset: Asset) {
   return {
     ...asset,
     calculations: {
-    months_Owned: effectiveMonths,
+    months_owned: effectiveMonths,
     monthly_depreciation: monthlyDepreciation,
     total_depreciation: totalDepreciation.toFixed(2),
     current_book_value: (currentBookValue > 0 ? currentBookValue : 0).toFixed(2),
